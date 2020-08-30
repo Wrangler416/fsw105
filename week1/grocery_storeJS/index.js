@@ -5,7 +5,8 @@ var shopper = {
     isVegetarian: true, 
     groceryCart: ["lettuce", "tomato", "onion"], 
     fullAddress: function() {
-        return this.city + " " + this.state;}
+        return this.city + " " + this.state;
+    }
 }; 
 console.log(shopper); 
-document.getElementById("message").innerHTML = shopper.fullAddress(); 
+console.log(shopper.fullAddress()); 
