@@ -6,24 +6,50 @@ if(cat === 3) {
     console.log("is the length")
 };
 
-if("cat" !== "dog") {
+if("cat" === "dog") {
+    console.log("same")
+} else {
     console.log("not the same")
-};
+}
 
 var person = {
     name: "Bobby",
     age: 12,
 };
 
-var grabProperty = Object.getOwnPropertyDescriptor(person, "name");
-
 if("age" >= 18) {
-    console.log(grabProperty.value, "is allowed to attend the movie")
+    console.log(person.name, "is allowed to attend the movie")
 } else {
-    console.log(grabProperty.value, "is not allowed to attend this movie")
+    console.log(person.name, "is not allowed to attend this movie")
+}  
+if(person.name.startsWith("B")) {
+    console.log(person.name + " " + "can enter")
+} else {
+    console.log(person.name + " " + "cannot enter")
+}
+if("age" >= 18 && person.name.startsWith("B")) {
+    console.log(person.name + " " + "you may enter")
+} else {
+    console.log(person.name + " " + "cannot enter")
 }
 
-if(name.charAt(0) === "B") {
-    console.log(grab.value, "is allowed to attend the movie")
+
+
+if(1 === 1) {
+    console.log("strict")
 }
+if(1 == 1) {
+    console.log("loose")
+} else {
+    console.log("not equal at all")
+}
+
+if(1 <= 2 && 2 === 4) {
+    console.log("yes")
+}
+
+
+console.log(typeof "dog");
+console.log(typeof true);
+
 
