@@ -9,7 +9,7 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
         gender: "female"
     }, {
         name: "Cheryl",
-        age: 4,
+        age: 22,
         gender: "female"
     }, {
         name: "Sam",
@@ -71,3 +71,7 @@ for (var i = 0; i < 101; i++) {
         console.log("odd")
     }
 }
+
+
+
+
