@@ -75,3 +75,22 @@ for (var i = 0; i < 101; i++) {
 
 
 
+
+
+
+if (arr[i].age >= 18 && arr[i].gender == 'male') {
+    //display name, old enough, along with HE portion
+    }
+    else if (arr[i].age < 18 && arr[i].gender == 'male'){
+    //display name, is NOT old enough, along with HE portion
+    }
+    else if (arr[i].age >= 18 && arr[i].gender == 'female') {
+    //display name, old enough, along with SHE portion
+    }
+    else if (arr[i].age < 18 && arr[i].gender == 'female'){
+    //display name, is NOT old enough, along with SHE portion
+    }
+
+
+
+
