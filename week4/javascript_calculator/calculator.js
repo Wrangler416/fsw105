@@ -1,8 +1,8 @@
-const readline = require('readline-sync');
+const readline = require("readline-sync");
 
-var firstNumber = readlineSync.questionInt("Please enter your first number");
-var secondNumber = readlineSync.questionInt("Please enter your second number");
-var operator = readlineSync.question("Please enter the operation to perform- add, sub, mul, div:");
+var firstNumber = readline.questionInt("Please enter your first number");
+var secondNumber = readline.questionInt("Please enter your second number");
+var operator = readline.question("Please enter the operation to perform- add, sub, mul, div:");
 
 function addingNumbers (num1, num2) {
     return "Numbers added together equals" + (num1 + num2);
