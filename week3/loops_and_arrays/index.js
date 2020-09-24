@@ -49,17 +49,22 @@ for (var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
     for(var j = 0; j < peopleWhoWantToSeeMadMaxFuryRoad[i].length; j++){
    }
 
-   if (peopleWhoWantToSeeMadMaxFuryRoad.age >= 18) 
-     {
-        if(peopleWhoWantToSeeMadMaxFuryRoad[i].gender == "male") {
-            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "is old enough. HE can see Mad Max Fury Road.")
-        } else {
-       console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "is NOT old enough. HE cannot see Mad Max Fury Road.")}
-        }
-       if (peopleWhoWantToSeeMadMaxFuryRoad[i].gender == "female") {
-        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "is old enough. SHE can see Mad Max Fury Road")
-       } else {
-        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "is NOT old enough. SHE cannot see Mad Max Fury Road") }
+   
+if (peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender == 'male') {
+    console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "is old enough. HE can see Mad Max Fury Road.");
+    }
+
+    else if (peopleWhoWantToSeeMadMaxFuryRoad[i].age < 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender == 'male'){
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "is NOT old enough. HE cannot see Mad Max Fury Road.");
+    }
+
+    else if (peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender == 'female') {
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "is old enough. SHE can see Mad Max Fury Road.");
+    }
+
+    else if (peopleWhoWantToSeeMadMaxFuryRoad[i].age < 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender == 'female'){
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "is NOT old enough. SHE cannot see Mad Max Fury Road.");
+    }
 }
 
 //4. 
@@ -71,26 +76,4 @@ for (var i = 0; i < 101; i++) {
         console.log("odd")
     }
 }
-
-
-
-
-
-
-
-if (arr[i].age >= 18 && arr[i].gender == 'male') {
-    //display name, old enough, along with HE portion
-    }
-    else if (arr[i].age < 18 && arr[i].gender == 'male'){
-    //display name, is NOT old enough, along with HE portion
-    }
-    else if (arr[i].age >= 18 && arr[i].gender == 'female') {
-    //display name, old enough, along with SHE portion
-    }
-    else if (arr[i].age < 18 && arr[i].gender == 'female'){
-    //display name, is NOT old enough, along with SHE portion
-    }
-
-
-
 

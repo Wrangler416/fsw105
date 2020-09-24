@@ -11,19 +11,15 @@ console.log(numberHalfRounded)
 //3. 
 var nextString = "Web Development"
 var halfLength = Math.ceil(nextString.length / 2); 
-var splicedString = nextString.slice(0, halfLength)
-console.log(splicedString)
+var splicedString = nextString.slice(0, halfLength);
+console.log(splicedString);
 //4. 
 var lastString = "Full Stack Web Development"
-var firstHalf = lastString.slice(0, 13)
-var lastHalf = lastString.slice(13, 26 )
-var capFirst = firstHalf.toUpperCase()
-var capLast = lastHalf.toLowerCase()
-console.log(capFirst + capLast) 
-
-
-
-
+var firstHalf = lastString.slice(0, lastString.length / 2); 
+var lastHalf = lastString.slice(lastString.length / 2);
+var capFirst = firstHalf.toUpperCase();
+var capLast = lastHalf.toLowerCase();
+console.log(capFirst + capLast);
 
 
 
