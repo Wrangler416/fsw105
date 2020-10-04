@@ -2,6 +2,7 @@
 //1. 
 function runForLoop(pets) {
     const myName = "John"
+    let name = "name"
     let age = 101
     let petObjects = []
     for (let i = 0; i < pets.length; i++) {
@@ -53,12 +54,6 @@ const people = [
     }
 ]
 
-// function filterForFriendly(arr) {
-//     return arr.filter(function(person) {
-//         return person.friendly
-//     })
-// }
-
 const filterFriendly = people.filter (people => people.friendly === true)
 
 console.log(filterFriendly)
@@ -69,25 +64,24 @@ let doMathSum = (a, b) => a + b;
 
 let produceProduct = (a, b) => a * b;
 
+console.log(doMathSum(4, 8));
+console.log(produceProduct(6, 7));
+
 
 //5. 
 
-const person = {
-    fname: "Jane",
-    lname: "Doe",
-    age: 100
-}
+let printString = (firstName = "Jane", lastName = "Doe", age = 100) => "Hi" + " " + firstName + " " + lastName + ", " + "how does it feel to be" + " " + age +"?"; 
 
-function printString() {
-    console.log(`Hi ${person.fname + person.lname} how does it feel to be ${person.age}?`)
-}
+console.log(printString("Kat", "Stark", 40));
+
 
 //6.
 
-const printStrings = 
-`Hi ${person.fname + person.lname} how does it feel to be ${person.age}?`
 
-console.log(printStrings)
+let printedString = (fName = "Jane", lName = "Doe", age = 100) => `Hi ${fName} ${lName}, how does it feel to be ${age}?`;
+
+console.log(printedString("Kat", "Stark", 40));
+
 
 //7. 
 
@@ -110,25 +104,12 @@ const animals = [
     } 
 ];
 
-// function filterForDogs(arr) {
-//     return arr.filter(animal => {
-//         if (animal.type === "dog") {
-//             return true
-//         } else {
-//             return false
-//         }
-//     })
-// }
-
 const filterDogs = animals.filter(animal => animal.type === "dog")
 console.log(filterDogs)
 
 //8.  
 
-const firstname = "Janice"
-const location = "Hawaii"
+let number8 = (firstname = "Janice", location = "Hawaii") => `Hi, ${firstname}! \n Welcome to ${location}.\n I hope you enjoy your stay. Please ask the president of ${location} if you need anything`
 
-function ns() 
-{ return "I hope you enjoy your stay. Please ask the president of"; }
-console.log(`Hi, ${firstname}. Welcome to ${location}. ${ns()} ${location} if you need anything.`);
+console.log(number8("Janice", "Hawaii"));
 
