@@ -1,7 +1,7 @@
 //ES6
 //1. 
 function runForLoop(pets) {
-    let name = "John"
+    const myName = "John"
     let age = 101
     let petObjects = []
     for (let i = 0; i < pets.length; i++) {
@@ -16,7 +16,7 @@ function runForLoop(pets) {
         pet.name = name
         petObjects.push(pet)
     }
-    console.log("man name: ", name)
+    console.log("man name: ", myName)
     return petObjects
 }
 runForLoop(["cat", "dog"]);
