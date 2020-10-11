@@ -5,7 +5,7 @@ console.log(welcome);
 
 const playerName = readlineSync.question("Please enter your name");
 
-const welcome2 = "Welcome" + playerName + ", we are headed into the depths of the Amazon! Let's see if you have what it takes to survive..."; 
+const welcome2 = readlineSync.question("Welcome" + playerName + ", we are headed into the depths of the Amazon! Let's see if you have what it takes to survive, Press Enter to continue"); 
 console.log(welcome2);
 
 const enemies = ["Jaguar", "Anaconda", "Caiman", "Posion Dart Frog", "Piranha"];
